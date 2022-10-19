@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01057124-Virtual-Resume</title>
+    <style type="text/css">
+
+        @import "icon.css";
+        @import "background.css";
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+        .header{
+            font-size:40px;
+            font-style: italic;
+            color:rgb(26, 81, 102);
+        }
+        .container {
+
+            max-width: 700px;
+            height:100%;
+            background: #eee;
+            margin: 0px auto 0px;
+            box-shadow: 5px 5px 2px grey;
+            border-radius: 3px;
+            padding: 30px;
+            margin-top: 50px;
+        }
+        
+        .my_head {
+            width: 100px;
+            position: relative;
+            height: 100px;
+            border: 2px solid grey;
+            padding:2px;
+            border-radius: 50%;
+            top: 5px;
+        }
+        
+        
+        .head_intro {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .name {
+            font-size: 40px;
+            position: relative;
+            left: 15px;
+            top: 10px;
+        }
+        
+        .hr1 {
+            position: relative;
+            top: -50px;
+            border: 5px solid grey;
+        }
+        .article{
+            font-size:20px;
+        }
+
+        p a{
+            text-decoration: none;
+            color:black;
+        }
+        p a:hover{
+            text-decoration: underline;
+            color:navy;
+        }
+        
+
+    </style>
+</head>
+
+<body id="top">
+    <!--Background--->
+    <div id="stars"></div>
+
+
+
+    <div class="container" >
+        <!--Head--->
+        <div class="head_intro">
+            <img id="face" src="cat.jpg" onclick="Pop()" class="my_head" onclick="">
+
+            <h1 class="name" >Beluga Cat</h1>
+        </div>
+
+        <!--Social Media link and data-->
+        <div class="effect lavinia">
+            <hr class="hr1">
+            <div class="buttons">
+                <a href="https://www.facebook.com/BelugaFans/" class="fb" title="Join us on Facebook" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/beluga1000" class="tw" title="Join us on Twitter" target="_blank"><i
+                            class="fa fa-twitter" aria-hidden="true"></i></a>
+
+                <a href="https://www.instagram.com/beluga1000/" class="insta" title="Join us on Instagram" target="_blank"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div>
+        <p style="font-size:30px;"><img src="phone.png" style="width:35px; height:35px;position:relative;top:7px;"><a href="tel:0987-987-987">0987-987-987</a></p>    
+
+        <p style="font-size:30px;"><img src="mail.png" style="width:35px; height:35px;position:relative;top:7px;"><a href="mailto:IAmCuteCat@gmail.com">IAmCuteCat@gmail.com</a></p>  
+ 
+        <p style="font-size:30px;"><img src="birthday.png" style="width:35px; height:35px;position:relative;top:7px;">2020/10/19</p>
+        <hr>
+        <!--Article-->
+        <div >
+            <h2 class="header">About Me</h2>
+            <p class="article">
+                &nbsp &nbsp I am a cat living in America,and I am so cute.
+                I have 10 years experience of Youtube,and this is my channel -><a href="https://www.youtube.com/c/Beluga1" target="_blank" ><img src="rainbow_cat.gif" width="20" height="20"></a>.
+                <br><br>
+                &nbsp &nbsp HA! I am gonna have 10M subscibers in no soon.
+                If you have not subscibe my channel , do it right now.
+                <br>
+            </p>
+            <p class="article">
+                &nbsp &nbsp Ok,back to the topic....,umm I'm tired.Bye~.
+                Oh,by the way,this is my new vedio "<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="background-color:lightblue" onclick="Rickroll()" target="_blank">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>" <h2 id="msg">Go watch it!</h2>
+                
+            </p>
+        </div>
+        <div>
+            <h2 class="header">Education</h2>
+            <p class="artical"><b> &nbspHarvard University</b><img src="school.jpg" width="100px" height="100px">
+            <br>&nbsp51 Brattle St Cambridge, MA 02138
+        </p>
+        </div>
+        <div>
+            <h2 class="header">Skill</h2>
+            <p class="artical">
+                <ul>
+                    <li >
+                      <h3>HTML</h3>
+                      <progress  max="100" value="50">
+                      </progress>
+                    </li>
+                    <li>
+                      <h3>C++</h3>
+                      <progress  max="100" value="75">
+                      </progress>
+                    </li>
+                    <li >
+                      <h3>Sleep</h3>
+                      <progress  max="100" value="100">
+                      </progress>
+                    </li>
+                  </ul>
+            </p>
+        </div>
+        <a href="#top">TOP</a>
+    </div>
+</body>
+    <script>
+        function Pop(){//點擊頭像可打開頭像視窗
+            window.open("cat.jpg","resizable=true,height=200,width=300");
+        }
+        function Rickroll(){
+            document.getElementById("msg").innerHTML="<h2 style='color:red'>Rick roll~~!!</h2>"
+        }
+    </script>
+</html>
